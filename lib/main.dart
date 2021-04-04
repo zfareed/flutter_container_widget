@@ -13,12 +13,23 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
           title: Text('Container Widgets'),
         ),
-        body: Container(
-          margin: EdgeInsets.all(40.0),
-          padding: EdgeInsets.all(20.0),
-          color: Colors.greenAccent,
-          child: Text('Zain Fareed'),
-        ),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+                width: 100.0,
+                height: double.infinity,
+                color: Colors.blue),
+            Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.yellow),
+            Container(
+                width: 100.0,
+                height: double.infinity,
+                color: Colors.red)
+          ],
+        )
       ),
     );
   }
